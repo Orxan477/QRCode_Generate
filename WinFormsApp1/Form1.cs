@@ -19,7 +19,7 @@ namespace WinFormsApp1
             QRCodeGenerator qr = new QRCodeGenerator();
             QRCodeData data = qr.CreateQrCode(txtQRCode.Text, QRCodeGenerator.ECCLevel.Q);
             QRCode code = new QRCode(data);
-            pic.Image = code.GetGraphic(5); 
+            pic.Image = code.GetGraphic(5);
         }
     }
 }

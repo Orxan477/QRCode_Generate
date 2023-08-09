@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             btnGenerate = new Button();
             label1 = new Label();
             pic = new PictureBox();
@@ -83,6 +84,7 @@
             Controls.Add(pic);
             Controls.Add(label1);
             Controls.Add(btnGenerate);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "QRCode Generate";
