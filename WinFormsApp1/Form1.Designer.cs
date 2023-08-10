@@ -33,6 +33,7 @@
             label1 = new Label();
             pic = new PictureBox();
             txtQRCode = new TextBox();
+            reng = new TextBox();
             ((System.ComponentModel.ISupportInitialize)pic).BeginInit();
             SuspendLayout();
             // 
@@ -75,11 +76,19 @@
             txtQRCode.Size = new Size(326, 67);
             txtQRCode.TabIndex = 3;
             // 
+            // reng
+            // 
+            reng.Location = new Point(21, 404);
+            reng.Name = "reng";
+            reng.Size = new Size(100, 23);
+            reng.TabIndex = 4;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(362, 436);
+            ClientSize = new Size(368, 441);
+            Controls.Add(reng);
             Controls.Add(txtQRCode);
             Controls.Add(pic);
             Controls.Add(label1);
@@ -99,5 +108,6 @@
         private Label label1;
         private PictureBox pic;
         private TextBox txtQRCode;
+        private TextBox reng;
     }
 }

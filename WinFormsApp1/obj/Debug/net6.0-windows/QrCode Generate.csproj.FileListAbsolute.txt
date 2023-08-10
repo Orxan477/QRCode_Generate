@@ -17,3 +17,4 @@ C:\Users\Orxan477\Desktop\QRCode_Generate\WinFormsApp1\obj\Debug\net6.0-windows\
 C:\Users\Orxan477\Desktop\QRCode_Generate\WinFormsApp1\obj\Debug\net6.0-windows\QrCode Generate.pdb
 C:\Users\Orxan477\Desktop\QRCode_Generate\WinFormsApp1\obj\Debug\net6.0-windows\QrCode Generate.genruntimeconfig.cache
 C:\Users\Orxan477\Desktop\QRCode_Generate\WinFormsApp1\obj\Debug\net6.0-windows\ref\QrCode Generate.dll
+C:\Users\Orxan477\Desktop\QRCode_Generate\WinFormsApp1\obj\Debug\net6.0-windows\QrCode_Generate.Properties.Resources.resources
