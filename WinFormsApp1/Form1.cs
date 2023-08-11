@@ -21,7 +21,7 @@ namespace WinFormsApp1
             QRCode code = new QRCode(data);
             System.Drawing.Bitmap qrImage = code.GetGraphic(5);
 
-            if(reng.Text=="")
+            if (reng.Text == "")
             {
                 reng.Text = "#000";
             }
@@ -47,7 +47,7 @@ namespace WinFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+
         }
     }
 }

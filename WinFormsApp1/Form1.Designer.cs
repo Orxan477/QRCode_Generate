@@ -39,7 +39,7 @@
             // 
             // btnGenerate
             // 
-            btnGenerate.Location = new Point(272, 403);
+            btnGenerate.Location = new Point(494, 588);
             btnGenerate.Name = "btnGenerate";
             btnGenerate.Size = new Size(75, 23);
             btnGenerate.TabIndex = 0;
@@ -62,7 +62,7 @@
             pic.BackColor = Color.White;
             pic.Location = new Point(21, 36);
             pic.Name = "pic";
-            pic.Size = new Size(326, 288);
+            pic.Size = new Size(531, 461);
             pic.SizeMode = PictureBoxSizeMode.CenterImage;
             pic.TabIndex = 2;
             pic.TabStop = false;
@@ -70,15 +70,15 @@
             // txtQRCode
             // 
             txtQRCode.BackColor = Color.White;
-            txtQRCode.Location = new Point(21, 330);
+            txtQRCode.Location = new Point(21, 503);
             txtQRCode.Multiline = true;
             txtQRCode.Name = "txtQRCode";
-            txtQRCode.Size = new Size(326, 67);
+            txtQRCode.Size = new Size(531, 79);
             txtQRCode.TabIndex = 3;
             // 
             // reng
             // 
-            reng.Location = new Point(21, 404);
+            reng.Location = new Point(21, 588);
             reng.Name = "reng";
             reng.Size = new Size(100, 23);
             reng.TabIndex = 4;
@@ -87,7 +87,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(368, 441);
+            ClientSize = new Size(573, 623);
             Controls.Add(reng);
             Controls.Add(txtQRCode);
             Controls.Add(pic);
