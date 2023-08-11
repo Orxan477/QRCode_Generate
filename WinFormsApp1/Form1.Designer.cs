@@ -31,15 +31,15 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             btnGenerate = new Button();
             label1 = new Label();
-            pic = new PictureBox();
             txtQRCode = new TextBox();
             reng = new TextBox();
+            pic = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pic).BeginInit();
             SuspendLayout();
             // 
             // btnGenerate
             // 
-            btnGenerate.Location = new Point(494, 588);
+            btnGenerate.Location = new Point(769, 588);
             btnGenerate.Name = "btnGenerate";
             btnGenerate.Size = new Size(75, 23);
             btnGenerate.TabIndex = 0;
@@ -50,44 +50,43 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(21, 18);
+            label1.Location = new Point(12, 9);
             label1.Name = "label1";
             label1.Size = new Size(54, 15);
             label1.TabIndex = 1;
             label1.Text = "QR Code";
             label1.Click += label1_Click;
             // 
-            // pic
-            // 
-            pic.BackColor = Color.White;
-            pic.Location = new Point(21, 36);
-            pic.Name = "pic";
-            pic.Size = new Size(531, 461);
-            pic.SizeMode = PictureBoxSizeMode.CenterImage;
-            pic.TabIndex = 2;
-            pic.TabStop = false;
-            // 
             // txtQRCode
             // 
             txtQRCode.BackColor = Color.White;
-            txtQRCode.Location = new Point(21, 503);
+            txtQRCode.Location = new Point(12, 503);
             txtQRCode.Multiline = true;
             txtQRCode.Name = "txtQRCode";
-            txtQRCode.Size = new Size(531, 79);
+            txtQRCode.Size = new Size(832, 79);
             txtQRCode.TabIndex = 3;
             // 
             // reng
             // 
-            reng.Location = new Point(21, 588);
+            reng.Location = new Point(12, 588);
             reng.Name = "reng";
             reng.Size = new Size(100, 23);
             reng.TabIndex = 4;
             // 
+            // pic
+            // 
+            pic.BackColor = Color.White;
+            pic.Location = new Point(12, 27);
+            pic.Name = "pic";
+            pic.Size = new Size(832, 470);
+            pic.SizeMode = PictureBoxSizeMode.CenterImage;
+            pic.TabIndex = 2;
+            pic.TabStop = false;
+            // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(573, 623);
+            AutoScaleMode = AutoScaleMode.Inherit;
+            ClientSize = new Size(856, 623);
             Controls.Add(reng);
             Controls.Add(txtQRCode);
             Controls.Add(pic);
@@ -95,7 +94,6 @@
             Controls.Add(btnGenerate);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form1";
-            StartPosition = FormStartPosition.CenterScreen;
             Text = "QRCode Generate";
             ((System.ComponentModel.ISupportInitialize)pic).EndInit();
             ResumeLayout(false);
@@ -106,8 +104,8 @@
 
         private Button btnGenerate;
         private Label label1;
-        private PictureBox pic;
         private TextBox txtQRCode;
         private TextBox reng;
+        private PictureBox pic;
     }
 }

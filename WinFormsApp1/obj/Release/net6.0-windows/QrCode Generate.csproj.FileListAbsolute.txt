@@ -18,10 +18,6 @@ C:\Users\Orxan477\Desktop\QRCode_Generate\WinFormsApp1\obj\Release\net6.0-window
 C:\Users\Orxan477\Desktop\QRCode_Generate\WinFormsApp1\obj\Release\net6.0-windows\QrCode Generate.genruntimeconfig.cache
 C:\Users\Orxan477\Desktop\QRCode_Generate\WinFormsApp1\obj\Release\net6.0-windows\ref\QrCode Generate.dll
 C:\Users\Orxan477\Desktop\QRCode_Generate\WinFormsApp1\obj\Release\net6.0-windows\QrCode_Generate.Properties.Resources.resources
-C:\Users\Orxan477\Desktop\QRCode_Generate\WinFormsApp1\bin\Release\net6.0-windows\QrCode Generate.dll.manifest
-C:\Users\Orxan477\Desktop\QRCode_Generate\WinFormsApp1\bin\Release\net6.0-windows\QrCode Generate.application
-C:\Users\Orxan477\Desktop\QRCode_Generate\WinFormsApp1\obj\Release\net6.0-windows\QrCode Generate.dll.manifest
-C:\Users\Orxan477\Desktop\QRCode_Generate\WinFormsApp1\obj\Release\net6.0-windows\QrCode Generate.application
 C:\Users\orxan\Desktop\QRCode_Generate\WinFormsApp1\bin\Release\net6.0-windows\QrCode Generate.exe
 C:\Users\orxan\Desktop\QRCode_Generate\WinFormsApp1\bin\Release\net6.0-windows\QrCode Generate.deps.json
 C:\Users\orxan\Desktop\QRCode_Generate\WinFormsApp1\bin\Release\net6.0-windows\QrCode Generate.runtimeconfig.json

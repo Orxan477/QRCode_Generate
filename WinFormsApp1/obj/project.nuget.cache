@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "kgJw8/mVJvva5JNiIrzp0EoHEiiSZs7FGmPzKd/WUu1xe7JWbIFjf16+TJHj3jbvSH8w/3VVgpix3mUmU5SpSQ==",
+  "dgSpecHash": "QsFulQEg2k7QkdU3R824+7VLIKoKNQKzIQpdMylFSxoe7oUMy9pcKDpmNpSxRna9TPfRquzH8F3Bv0Iz6JCYBw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\orxan\\Desktop\\QRCode_Generate\\WinFormsApp1\\QrCode Generate.csproj",
+  "projectFilePath": "C:\\Users\\Orxan477\\Desktop\\QRCode_Generate\\WinFormsApp1\\QrCode Generate.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\orxan\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
-    "C:\\Users\\orxan\\.nuget\\packages\\qrcoder\\1.4.3\\qrcoder.1.4.3.nupkg.sha512",
-    "C:\\Users\\orxan\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512"
+    "C:\\Users\\Orxan477\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
+    "C:\\Users\\Orxan477\\.nuget\\packages\\qrcoder\\1.4.3\\qrcoder.1.4.3.nupkg.sha512",
+    "C:\\Users\\Orxan477\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }
