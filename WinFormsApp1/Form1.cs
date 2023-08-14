@@ -107,10 +107,9 @@ namespace WinFormsApp1
             Bitmap qrImage = code.GetGraphic(5);
 
             Color startColor = ColorTranslator.FromHtml("#3f4293"); // Başlangıç rengi
-            Color endColor = ColorTranslator.FromHtml("#3d3d3b"); // Bitiş rengi
 
-            Bitmap logo = new Bitmap(@"C:\Users\Orxan477\Desktop\QRCode_Generate\bayburt.png"); // Logo dosyasının yolunu belirtin
-            int logoSize = qrImage.Width / 4; // Logo boyutunu ayarlayabilirsiniz
+            Bitmap logo = new Bitmap(@"C:\Users\Orxan477\Desktop\QRCode_Generate\şenbay-beyaz.png"); // Logo dosyasının yolunu belirtin
+            int logoSize = qrImage.Width / 3; // Logo boyutunu ayarlayabilirsiniz
             logo = new Bitmap(logo, new Size(logoSize, logoSize));
 
             for (int y = 0; y < qrImage.Height; y++)
@@ -120,8 +119,10 @@ namespace WinFormsApp1
                     Color pixelColor = qrImage.GetPixel(x, y);
                     if (pixelColor.ToArgb() == Color.Black.ToArgb())
                     {
-                        int gradientValue = (int)((double)y / qrImage.Height * 255);
+                        int gradientValue = (int)((double)y / qrImage.Height * 255 * 3); // Alpha değeri 255'ten fazla olmamalı
+                        gradientValue = Math.Min(255, gradientValue); // Alpha değerini 255'e sınırla
                         Color gradientColor = Color.FromArgb(gradientValue, startColor);
+
 
                         qrImage.SetPixel(x, y, gradientColor);
                     }
@@ -136,7 +137,6 @@ namespace WinFormsApp1
             }
 
             pic.Image = qrImage;
-
 
         }
 
