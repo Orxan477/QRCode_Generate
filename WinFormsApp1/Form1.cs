@@ -1,6 +1,8 @@
 ﻿using Microsoft.VisualBasic.ApplicationServices;
 using QRCoder;
 using System.Drawing.Drawing2D;
+using System.Reflection.Emit;
+using System.Text;
 using System.Windows.Forms;
 
 namespace WinFormsApp1
@@ -81,8 +83,9 @@ namespace WinFormsApp1
 
             QRCodeGenerator qr = new QRCodeGenerator();
             QRCodeData data = qr.CreateQrCode(txtQRCode.Text, QRCodeGenerator.ECCLevel.Q);
+            //QRCodeData data = qr.CreateQrCode(Uri.EscapeDataString(txtQRCode.Text), QRCodeGenerator.ECCLevel.Q);
             QRCode code = new QRCode(data);
-            Bitmap qrImage = code.GetGraphic(5);
+            Bitmap qrImage = code.GetGraphic(4);
             if (reng.Text == "")
             {
                 reng.Text = "#000";

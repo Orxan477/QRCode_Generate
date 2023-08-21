@@ -45,7 +45,7 @@
             // 
             // btnGenerate
             // 
-            btnGenerate.Location = new Point(816, 570);
+            btnGenerate.Location = new Point(850, 588);
             btnGenerate.Name = "btnGenerate";
             btnGenerate.Size = new Size(75, 38);
             btnGenerate.TabIndex = 0;
@@ -66,7 +66,7 @@
             // txtQRCode
             // 
             txtQRCode.BackColor = Color.White;
-            txtQRCode.Location = new Point(12, 529);
+            txtQRCode.Location = new Point(12, 547);
             txtQRCode.Multiline = true;
             txtQRCode.Name = "txtQRCode";
             txtQRCode.Size = new Size(503, 79);
@@ -74,7 +74,7 @@
             // 
             // reng
             // 
-            reng.Location = new Point(521, 553);
+            reng.Location = new Point(521, 565);
             reng.Name = "reng";
             reng.Size = new Size(100, 23);
             reng.TabIndex = 4;
@@ -84,7 +84,7 @@
             pic.BackColor = Color.White;
             pic.Location = new Point(12, 27);
             pic.Name = "pic";
-            pic.Size = new Size(879, 496);
+            pic.Size = new Size(913, 514);
             pic.SizeMode = PictureBoxSizeMode.CenterImage;
             pic.TabIndex = 2;
             pic.TabStop = false;
@@ -92,7 +92,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(521, 532);
+            label2.Location = new Point(521, 547);
             label2.Name = "label2";
             label2.Size = new Size(64, 15);
             label2.TabIndex = 5;
@@ -101,7 +101,7 @@
             // Gradient
             // 
             Gradient.AutoSize = true;
-            Gradient.Location = new Point(632, 532);
+            Gradient.Location = new Point(632, 543);
             Gradient.Name = "Gradient";
             Gradient.Size = new Size(71, 19);
             Gradient.TabIndex = 6;
@@ -115,7 +115,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(521, 582);
+            button1.Location = new Point(521, 594);
             button1.Name = "button1";
             button1.Size = new Size(75, 26);
             button1.TabIndex = 8;
@@ -145,7 +145,7 @@
             // Form1
             // 
             AutoScaleMode = AutoScaleMode.Inherit;
-            ClientSize = new Size(903, 620);
+            ClientSize = new Size(937, 634);
             Controls.Add(label3);
             Controls.Add(image_check);
             Controls.Add(button1);
