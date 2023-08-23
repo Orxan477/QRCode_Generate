@@ -22,68 +22,10 @@ namespace WinFormsApp1
 
         private void btnGenerate_Click(object sender, EventArgs e)
         {
-            //globalda olan
-
-            //QRCodeGenerator qr = new QRCodeGenerator();
-            //QRCodeData data = qr.CreateQrCode(txtQRCode.Text, QRCodeGenerator.ECCLevel.Q);
-            //QRCode code = new QRCode(data);
-            //System.Drawing.Bitmap qrImage = code.GetGraphic(5);
-
-            //if (reng.Text == "")
-            //{
-            //    reng.Text = "#000";
-            //}
-
-            //System.Drawing.Color customColor = System.Drawing.ColorTranslator.FromHtml(reng.Text);
-
-            //for (int y = 0; y < qrImage.Height; y++)
-            //{
-            //    for (int x = 0; x < qrImage.Width; x++)
-            //    {
-            //        System.Drawing.Color pixelColor = qrImage.GetPixel(x, y);
-            //        if (pixelColor.ToArgb() == System.Drawing.Color.Black.ToArgb())
-            //        {
-            //            qrImage.SetPixel(x, y, customColor); // Siyah pikselleri özel renkle değiştir
-            //        }
-            //    }
-            //}
-
-            //pic.Image = qrImage;
-
-
-
-            // yuxardan asagi
-
-            //QRCodeGenerator qr = new QRCodeGenerator();
-            //QRCodeData data = qr.CreateQrCode(txtQRCode.Text, QRCodeGenerator.ECCLevel.Q);
-            //QRCode code = new QRCode(data);
-            //System.Drawing.Bitmap qrImage = code.GetGraphic(5);
-
-            //System.Drawing.Color startColor = System.Drawing.ColorTranslator.FromHtml("#3f4293"); // Başlangıç rengi
-            //System.Drawing.Color endColor = System.Drawing.ColorTranslator.FromHtml("#3d3d3b"); // Bitiş rengi
-
-            //for (int y = 0; y < qrImage.Height; y++)
-            //{
-            //    for (int x = 0; x < qrImage.Width; x++)
-            //    {
-            //        System.Drawing.Color pixelColor = qrImage.GetPixel(x, y);
-            //        if (pixelColor.ToArgb() == System.Drawing.Color.Black.ToArgb())
-            //        {
-            //            int gradientValue = (int)((double)y / qrImage.Height * 255 * 3); // Alpha değeri 255'ten fazla olmamalı
-            //            gradientValue = Math.Min(255, gradientValue); // Alpha değerini 255'e sınırla
-            //            Color gradientColor = Color.FromArgb(gradientValue, startColor);
-            //            qrImage.SetPixel(x, y, gradientColor); // Siyah pikselleri gradient renk ile değiştir
-            //        }
-            //    }
-            //}
-
-            //pic.Image = qrImage;
-
-            // logo ile
+            
 
             QRCodeGenerator qr = new QRCodeGenerator();
             QRCodeData data = qr.CreateQrCode(txtQRCode.Text, QRCodeGenerator.ECCLevel.Q);
-            //QRCodeData data = qr.CreateQrCode(Uri.EscapeDataString(txtQRCode.Text), QRCodeGenerator.ECCLevel.Q);
             QRCode code = new QRCode(data);
             Bitmap qrImage = code.GetGraphic(4);
             if (reng.Text == "")
@@ -91,10 +33,9 @@ namespace WinFormsApp1
                 reng.Text = "#000";
             }
             Color startColor = ColorTranslator.FromHtml(reng.Text); // Başlangıç rengi
-                                                                    //Color startColor = ColorTranslator.FromHtml("#3f4293"); // Başlangıç rengi
-            if (label3.Text != "")
+             if (label3.Text != "")
             {
-                logo = new Bitmap(@"C:\Users\Orxan477\Desktop\QRCode_Generate\" + label3.Text); // Logo dosyasının yolunu belirtin
+                logo = new Bitmap(label3.Text); // Logo dosyasının yolunu belirtin
                 int logoSize = qrImage.Width / 2; // Logo boyutunu ayarlayabilirsiniz
                 logo = new Bitmap(logo, new Size(logoSize, logoSize));
 
@@ -112,8 +53,6 @@ namespace WinFormsApp1
                             int gradientValue = (int)((double)y / qrImage.Height * 255 * 3); // Alpha değeri 255'ten fazla olmamalı
                             gradientValue = Math.Min(255, gradientValue); // Alpha değerini 255'e sınırla
                             Color gradientColor = Color.FromArgb(gradientValue, startColor);
-
-
                             qrImage.SetPixel(x, y, gradientColor);
                         }
                     }
@@ -153,8 +92,8 @@ namespace WinFormsApp1
             {
                 string imagePath = opnfd.FileName;
                 Bitmap image = new Bitmap(imagePath);
-                image_check.Text = "Yükləndi";
-                label3.Text = opnfd.SafeFileName;
+                image_check.Text = "Yuklendi";
+                label3.Text = opnfd.FileName;
             }
         }
     }
