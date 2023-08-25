@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="QrCode Generate.exe" version="1.0.0.8" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="QrCode Generate.exe" version="1.0.0.9" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
   <application />
   <entryPoint>
     <assemblyIdentity name="Launcher" version="7.0.0.0" language="neutral" processorArchitecture="msil" />
@@ -62,22 +62,22 @@
       <dsig:DigestValue>lKXAKx9U8c/6ylxN40353kZ4MILmHGcGUCoScwG8puw=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="QrCode Generate.dll" size="116224">
+  <file name="QrCode Generate.dll" size="115712">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>Tr87yFrTBLEBlniMypgst7zBbr4UO/mWQzPTiNykJms=</dsig:DigestValue>
+      <dsig:DigestValue>NZ3OV80kCHEjaFGgulR1TSaBbS7Pylsc1c59Tv9Vfyw=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="QrCode Generate.exe" size="147968">
+  <file name="QrCode Generate.exe" size="147456">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>0evYCeA5dT70xo5HsrM+FT7hvAu2qabdqDvxP/mrn1s=</dsig:DigestValue>
+      <dsig:DigestValue>sNHKD64BtFjkrP5Il7y2Qv3A2jf/GI0s1Hy8IP1QZOw=</dsig:DigestValue>
     </hash>
   </file>
   <file name="QrCode Generate.runtimeconfig.json" size="372">

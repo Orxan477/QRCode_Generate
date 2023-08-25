@@ -22,23 +22,25 @@ namespace WinFormsApp1
 
         private void btnGenerate_Click(object sender, EventArgs e)
         {
-            
+
 
             QRCodeGenerator qr = new QRCodeGenerator();
             QRCodeData data = qr.CreateQrCode(txtQRCode.Text, QRCodeGenerator.ECCLevel.Q);
             QRCode code = new QRCode(data);
             Bitmap qrImage = code.GetGraphic(4);
+
             if (reng.Text == "")
             {
                 reng.Text = "#000";
             }
+
             Color startColor = ColorTranslator.FromHtml(reng.Text); // Başlangıç rengi
-             if (label3.Text != "")
+
+            if (!string.IsNullOrEmpty(label3.Text))
             {
                 logo = new Bitmap(label3.Text); // Logo dosyasının yolunu belirtin
                 int logoSize = qrImage.Width / 2; // Logo boyutunu ayarlayabilirsiniz
                 logo = new Bitmap(logo, new Size(logoSize, logoSize));
-
             }
 
             for (int y = 0; y < qrImage.Height; y++)
@@ -65,7 +67,8 @@ namespace WinFormsApp1
                     }
                 }
             }
-            if (label3.Text != "")
+
+            if (!string.IsNullOrEmpty(label3.Text))
             {
                 int xPos = (qrImage.Width - logo.Width) / 2;
                 int yPos = (qrImage.Height - logo.Height) / 2;
@@ -76,6 +79,7 @@ namespace WinFormsApp1
             }
 
             pic.Image = qrImage;
+
         }
 
         private void openFileDialog1_FileOk(object sender, System.ComponentModel.CancelEventArgs e)
