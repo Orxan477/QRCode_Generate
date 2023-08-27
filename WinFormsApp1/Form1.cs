@@ -1,8 +1,6 @@
-﻿using Microsoft.VisualBasic.ApplicationServices;
-using QRCoder;
-using System.Drawing.Drawing2D;
-using System.Reflection.Emit;
-using System.Text;
+﻿using QRCoder;
+using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace WinFormsApp1
@@ -10,20 +8,14 @@ namespace WinFormsApp1
     public partial class Form1 : Form
     {
         private Bitmap logo;
+
         public Form1()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnGenerate_Click(object sender, EventArgs e)
         {
-
-
             QRCodeGenerator qr = new QRCodeGenerator();
             QRCodeData data = qr.CreateQrCode(txtQRCode.Text, QRCodeGenerator.ECCLevel.Q);
             QRCode code = new QRCode(data);
@@ -34,12 +26,12 @@ namespace WinFormsApp1
                 reng.Text = "#000";
             }
 
-            Color startColor = ColorTranslator.FromHtml(reng.Text); // Başlangıç rengi
+            Color startColor = ColorTranslator.FromHtml(reng.Text);
 
             if (!string.IsNullOrEmpty(label3.Text))
             {
-                logo = new Bitmap(label3.Text); // Logo dosyasının yolunu belirtin
-                int logoSize = qrImage.Width / 2; // Logo boyutunu ayarlayabilirsiniz
+                logo = new Bitmap(label3.Text);
+                int logoSize = qrImage.Width / 2;
                 logo = new Bitmap(logo, new Size(logoSize, logoSize));
             }
 
@@ -48,21 +40,21 @@ namespace WinFormsApp1
                 for (int x = 0; x < qrImage.Width; x++)
                 {
                     Color pixelColor = qrImage.GetPixel(x, y);
-                    if (Gradient.Checked == true)
+                    if (Gradient.Checked)
                     {
                         if (pixelColor.ToArgb() == Color.Black.ToArgb())
                         {
-                            int gradientValue = (int)((double)y / qrImage.Height * 255 * 3); // Alpha değeri 255'ten fazla olmamalı
-                            gradientValue = Math.Min(255, gradientValue); // Alpha değerini 255'e sınırla
+                            int gradientValue = (int)((double)y / qrImage.Height * 255 * 3);
+                            gradientValue = Math.Min(255, gradientValue);
                             Color gradientColor = Color.FromArgb(gradientValue, startColor);
                             qrImage.SetPixel(x, y, gradientColor);
                         }
                     }
                     else
                     {
-                        if (pixelColor.ToArgb() == System.Drawing.Color.Black.ToArgb())
+                        if (pixelColor.ToArgb() == Color.Black.ToArgb())
                         {
-                            qrImage.SetPixel(x, y, startColor); // Siyah pikselleri özel renkle değiştir
+                            qrImage.SetPixel(x, y, startColor);
                         }
                     }
                 }
@@ -79,12 +71,6 @@ namespace WinFormsApp1
             }
 
             pic.Image = qrImage;
-
-        }
-
-        private void openFileDialog1_FileOk(object sender, System.ComponentModel.CancelEventArgs e)
-        {
-
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -96,9 +82,32 @@ namespace WinFormsApp1
             {
                 string imagePath = opnfd.FileName;
                 Bitmap image = new Bitmap(imagePath);
-                image_check.Text = "Yuklendi";
+                image_check.Text = "Yüklendi";
                 label3.Text = opnfd.FileName;
+                label4.Text = "";
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            using (SaveFileDialog saveFileDialog = new SaveFileDialog())
+            {
+                saveFileDialog.Filter = "PNG Dosyaları (*.png)|*.png|Tüm Dosyalar (*.*)|*.*";
+                saveFileDialog.FileName = "QRCode.png";
+
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    Bitmap qrBitmap = new Bitmap(pic.Image); // QR kod görüntüsünü al
+                    qrBitmap.Save(saveFileDialog.FileName, System.Drawing.Imaging.ImageFormat.Png);
+                }
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            label3.Text = "";
+            image_check.Text = "";
+            label4.Text = "Logo silindi";
         }
     }
 }

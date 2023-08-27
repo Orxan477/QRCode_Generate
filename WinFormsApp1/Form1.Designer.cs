@@ -40,6 +40,10 @@
             button1 = new Button();
             image_check = new Label();
             label3 = new Label();
+            saveFileDialog1 = new SaveFileDialog();
+            button2 = new Button();
+            button3 = new Button();
+            label4 = new Label();
             ((System.ComponentModel.ISupportInitialize)pic).BeginInit();
             SuspendLayout();
             // 
@@ -61,7 +65,6 @@
             label1.Size = new Size(54, 15);
             label1.TabIndex = 1;
             label1.Text = "QR Code";
-            label1.Click += label1_Click;
             // 
             // txtQRCode
             // 
@@ -111,11 +114,10 @@
             // openFileDialog1
             // 
             openFileDialog1.FileName = "openFileDialog1";
-            openFileDialog1.FileOk += openFileDialog1_FileOk;
             // 
             // button1
             // 
-            button1.Location = new Point(521, 594);
+            button1.Location = new Point(627, 562);
             button1.Name = "button1";
             button1.Size = new Size(75, 26);
             button1.TabIndex = 8;
@@ -127,7 +129,7 @@
             // 
             image_check.AutoSize = true;
             image_check.ForeColor = Color.FromArgb(0, 192, 0);
-            image_check.Location = new Point(602, 588);
+            image_check.Location = new Point(708, 567);
             image_check.Name = "image_check";
             image_check.Size = new Size(0, 15);
             image_check.TabIndex = 9;
@@ -142,10 +144,42 @@
             label3.TabIndex = 10;
             label3.Visible = false;
             // 
+            // button2
+            // 
+            button2.Location = new Point(850, 557);
+            button2.Name = "button2";
+            button2.Size = new Size(75, 25);
+            button2.TabIndex = 11;
+            button2.Text = "Export";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
+            // button3
+            // 
+            button3.Location = new Point(521, 603);
+            button3.Name = "button3";
+            button3.Size = new Size(75, 23);
+            button3.TabIndex = 12;
+            button3.Text = "Logo reset";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.ForeColor = Color.FromArgb(0, 192, 0);
+            label4.Location = new Point(602, 606);
+            label4.Name = "label4";
+            label4.Size = new Size(0, 15);
+            label4.TabIndex = 13;
+            // 
             // Form1
             // 
             AutoScaleMode = AutoScaleMode.Inherit;
             ClientSize = new Size(937, 634);
+            Controls.Add(label4);
+            Controls.Add(button3);
+            Controls.Add(button2);
             Controls.Add(label3);
             Controls.Add(image_check);
             Controls.Add(button1);
@@ -178,5 +212,9 @@
         private Button button1;
         private Label image_check;
         private Label label3;
+        private SaveFileDialog saveFileDialog1;
+        private Button button2;
+        private Button button3;
+        private Label label4;
     }
 }
