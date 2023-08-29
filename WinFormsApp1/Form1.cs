@@ -1,13 +1,19 @@
 ﻿using QRCoder;
+using SixLabors.ImageSharp.Formats.Jpeg;
+using SkiaSharp;
+using Svg.Skia;
 using System;
+using System.Diagnostics;
 using System.Drawing;
 using System.Windows.Forms;
+using Image = SixLabors.ImageSharp.Image;
 
 namespace WinFormsApp1
 {
     public partial class Form1 : Form
     {
         private Bitmap logo;
+        private Bitmap qrImage;
 
         public Form1()
         {
@@ -19,40 +25,40 @@ namespace WinFormsApp1
             QRCodeGenerator qr = new QRCodeGenerator();
             QRCodeData data = qr.CreateQrCode(txtQRCode.Text, QRCodeGenerator.ECCLevel.Q);
             QRCode code = new QRCode(data);
-            Bitmap qrImage = code.GetGraphic(4);
+            qrImage = code.GetGraphic(4);
 
             if (reng.Text == "")
             {
                 reng.Text = "#000";
             }
 
-            Color startColor = ColorTranslator.FromHtml(reng.Text);
+            System.Drawing.Color startColor = ColorTranslator.FromHtml(reng.Text);
 
             if (!string.IsNullOrEmpty(label3.Text))
             {
                 logo = new Bitmap(label3.Text);
                 int logoSize = qrImage.Width / 2;
-                logo = new Bitmap(logo, new Size(logoSize, logoSize));
+                logo = new Bitmap(logo, new System.Drawing.Size(logoSize, logoSize));
             }
 
             for (int y = 0; y < qrImage.Height; y++)
             {
                 for (int x = 0; x < qrImage.Width; x++)
                 {
-                    Color pixelColor = qrImage.GetPixel(x, y);
+                    System.Drawing.Color pixelColor = qrImage.GetPixel(x, y);
                     if (Gradient.Checked)
                     {
-                        if (pixelColor.ToArgb() == Color.Black.ToArgb())
+                        if (pixelColor.ToArgb() == System.Drawing.Color.Black.ToArgb())
                         {
                             int gradientValue = (int)((double)y / qrImage.Height * 255 * 3);
                             gradientValue = Math.Min(255, gradientValue);
-                            Color gradientColor = Color.FromArgb(gradientValue, startColor);
+                            System.Drawing.Color gradientColor = System.Drawing.Color.FromArgb(gradientValue, startColor);
                             qrImage.SetPixel(x, y, gradientColor);
                         }
                     }
                     else
                     {
-                        if (pixelColor.ToArgb() == Color.Black.ToArgb())
+                        if (pixelColor.ToArgb() == System.Drawing.Color.Black.ToArgb())
                         {
                             qrImage.SetPixel(x, y, startColor);
                         }
@@ -66,11 +72,12 @@ namespace WinFormsApp1
                 int yPos = (qrImage.Height - logo.Height) / 2;
                 using (Graphics g = Graphics.FromImage(qrImage))
                 {
-                    g.DrawImage(logo, new Point(xPos, yPos));
+                    g.DrawImage(logo, new System.Drawing.Point(xPos, yPos));
                 }
             }
-
             pic.Image = qrImage;
+
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -102,6 +109,7 @@ namespace WinFormsApp1
                 }
             }
         }
+
 
         private void button3_Click(object sender, EventArgs e)
         {
