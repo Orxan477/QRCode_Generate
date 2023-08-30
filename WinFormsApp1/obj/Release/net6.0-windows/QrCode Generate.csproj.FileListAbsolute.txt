@@ -42,23 +42,7 @@ C:\Users\orxan\Desktop\QRCode_Generate\WinFormsApp1\bin\Release\net6.0-windows\Q
 C:\Users\orxan\Desktop\QRCode_Generate\WinFormsApp1\bin\Release\net6.0-windows\QrCode Generate.application
 C:\Users\orxan\Desktop\QRCode_Generate\WinFormsApp1\obj\Release\net6.0-windows\QrCode Generate.dll.manifest
 C:\Users\orxan\Desktop\QRCode_Generate\WinFormsApp1\obj\Release\net6.0-windows\QrCode Generate.application
-C:\Users\Orxan477\Desktop\QRCode_Generate\WinFormsApp1\bin\Release\net6.0-windows\Newtonsoft.Json.dll
-C:\Users\Orxan477\Desktop\QRCode_Generate\WinFormsApp1\bin\Release\net6.0-windows\ZKWeb.System.Drawing.dll
-C:\Users\Orxan477\Desktop\QRCode_Generate\WinFormsApp1\bin\Release\net6.0-windows\SixLabors.ImageSharp.dll
-C:\Users\Orxan477\Desktop\QRCode_Generate\WinFormsApp1\bin\Release\net6.0-windows\ExCSS.dll
-C:\Users\Orxan477\Desktop\QRCode_Generate\WinFormsApp1\bin\Release\net6.0-windows\Fizzler.dll
-C:\Users\Orxan477\Desktop\QRCode_Generate\WinFormsApp1\bin\Release\net6.0-windows\HarfBuzzSharp.dll
-C:\Users\Orxan477\Desktop\QRCode_Generate\WinFormsApp1\bin\Release\net6.0-windows\Potrace.dll
-C:\Users\Orxan477\Desktop\QRCode_Generate\WinFormsApp1\bin\Release\net6.0-windows\ShimSkiaSharp.dll
 C:\Users\Orxan477\Desktop\QRCode_Generate\WinFormsApp1\bin\Release\net6.0-windows\SkiaSharp.dll
-C:\Users\Orxan477\Desktop\QRCode_Generate\WinFormsApp1\bin\Release\net6.0-windows\SkiaSharp.HarfBuzz.dll
-C:\Users\Orxan477\Desktop\QRCode_Generate\WinFormsApp1\bin\Release\net6.0-windows\Svg.Custom.dll
-C:\Users\Orxan477\Desktop\QRCode_Generate\WinFormsApp1\bin\Release\net6.0-windows\Svg.Model.dll
-C:\Users\Orxan477\Desktop\QRCode_Generate\WinFormsApp1\bin\Release\net6.0-windows\Svg.Skia.dll
-C:\Users\Orxan477\Desktop\QRCode_Generate\WinFormsApp1\bin\Release\net6.0-windows\runtimes\osx\native\libHarfBuzzSharp.dylib
-C:\Users\Orxan477\Desktop\QRCode_Generate\WinFormsApp1\bin\Release\net6.0-windows\runtimes\win-arm64\native\libHarfBuzzSharp.dll
-C:\Users\Orxan477\Desktop\QRCode_Generate\WinFormsApp1\bin\Release\net6.0-windows\runtimes\win-x64\native\libHarfBuzzSharp.dll
-C:\Users\Orxan477\Desktop\QRCode_Generate\WinFormsApp1\bin\Release\net6.0-windows\runtimes\win-x86\native\libHarfBuzzSharp.dll
 C:\Users\Orxan477\Desktop\QRCode_Generate\WinFormsApp1\bin\Release\net6.0-windows\runtimes\osx\native\libSkiaSharp.dylib
 C:\Users\Orxan477\Desktop\QRCode_Generate\WinFormsApp1\bin\Release\net6.0-windows\runtimes\win-arm64\native\libSkiaSharp.dll
 C:\Users\Orxan477\Desktop\QRCode_Generate\WinFormsApp1\bin\Release\net6.0-windows\runtimes\win-x64\native\libSkiaSharp.dll

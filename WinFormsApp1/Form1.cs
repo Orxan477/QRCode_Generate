@@ -1,12 +1,6 @@
 ﻿using QRCoder;
-using SixLabors.ImageSharp.Formats.Jpeg;
 using SkiaSharp;
-using Svg.Skia;
-using System;
-using System.Diagnostics;
 using System.Drawing;
-using System.Windows.Forms;
-using Image = SixLabors.ImageSharp.Image;
 
 namespace WinFormsApp1
 {
@@ -22,11 +16,67 @@ namespace WinFormsApp1
 
         private void btnGenerate_Click(object sender, EventArgs e)
         {
-            QRCodeGenerator qr = new QRCodeGenerator();
-            QRCodeData data = qr.CreateQrCode(txtQRCode.Text, QRCodeGenerator.ECCLevel.Q);
-            QRCode code = new QRCode(data);
-            qrImage = code.GetGraphic(4);
+            pic.Image = Qr(4);
+        }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog opnfd = new OpenFileDialog();
+            opnfd.Filter = "Image Files|*.jpg;*.png;*.gif;*.bmp;*.jpeg|All Files|*.*";
 
+            if (opnfd.ShowDialog() == DialogResult.OK)
+            {
+                string imagePath = opnfd.FileName;
+                Bitmap image = new Bitmap(imagePath);
+                image_check.Text = "Yüklendi";
+                label3.Text = opnfd.FileName;
+                label4.Text = "";
+            }
+        }
+        private void button2_Click(object sender, EventArgs e)
+        {
+            var qrImage = Qr(4);
+            using (SaveFileDialog saveFileDialog = new SaveFileDialog())
+            {
+                using (MemoryStream ms = new MemoryStream())
+                {
+                    qrImage.Save(ms, System.Drawing.Imaging.ImageFormat.Png); // QR kodunu PNG olarak belleğe kaydet
+                    ms.Seek(0, SeekOrigin.Begin);
+
+                    using (StreamReader reader = new StreamReader(ms))
+                    {
+                        string pngData = Convert.ToBase64String(ms.ToArray()); // Bellekten Base64 verisi olarak al
+                        string svgCode = $@"
+<svg xmlns=""http://www.w3.org/2000/svg"" xmlns:xlink=""http://www.w3.org/1999/xlink"" width=""{qrImage.Width}"" height=""{qrImage.Height}"">
+    <image xlink:href=""data:image/png;base64,{pngData}"" width=""{qrImage.Width}"" height=""{qrImage.Height}"" />
+</svg>";
+                        if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                        {
+                            // SVG kodunu dosyaya kaydet
+                            string svgFilePath = saveFileDialog.FileName + ".svg";
+                            File.WriteAllText(svgFilePath, svgCode);
+                        }
+
+                    }
+                }
+            }
+        }
+
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            label3.Text = "";
+            image_check.Text = "";
+            label4.Text = "Logo silindi";
+        }
+
+
+        private Bitmap Qr(int px)
+        {
+            string qrData = txtQRCode.Text; // QR kodunun içeriği
+            QRCodeGenerator qrGenerator = new QRCodeGenerator();
+            QRCodeData qrCodeData = qrGenerator.CreateQrCode(qrData, QRCodeGenerator.ECCLevel.Q);
+            QRCode qrCode = new QRCode(qrCodeData);
+            Bitmap qrImage = qrCode.GetGraphic(px); // 4 piksel büyüklüğünde QR kodu oluştur
             if (reng.Text == "")
             {
                 reng.Text = "#000";
@@ -75,47 +125,7 @@ namespace WinFormsApp1
                     g.DrawImage(logo, new System.Drawing.Point(xPos, yPos));
                 }
             }
-            pic.Image = qrImage;
-
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            OpenFileDialog opnfd = new OpenFileDialog();
-            opnfd.Filter = "Image Files|*.jpg;*.png;*.gif;*.bmp;*.jpeg|All Files|*.*";
-
-            if (opnfd.ShowDialog() == DialogResult.OK)
-            {
-                string imagePath = opnfd.FileName;
-                Bitmap image = new Bitmap(imagePath);
-                image_check.Text = "Yüklendi";
-                label3.Text = opnfd.FileName;
-                label4.Text = "";
-            }
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            using (SaveFileDialog saveFileDialog = new SaveFileDialog())
-            {
-                saveFileDialog.Filter = "PNG Dosyaları (*.png)|*.png|Tüm Dosyalar (*.*)|*.*";
-                saveFileDialog.FileName = "QRCode.png";
-
-                if (saveFileDialog.ShowDialog() == DialogResult.OK)
-                {
-                    Bitmap qrBitmap = new Bitmap(pic.Image); // QR kod görüntüsünü al
-                    qrBitmap.Save(saveFileDialog.FileName, System.Drawing.Imaging.ImageFormat.Png);
-                }
-            }
-        }
-
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            label3.Text = "";
-            image_check.Text = "";
-            label4.Text = "Logo silindi";
+            return qrImage;
         }
     }
 }
