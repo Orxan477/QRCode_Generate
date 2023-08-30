@@ -47,3 +47,7 @@ C:\Users\Orxan477\Desktop\QRCode_Generate\WinFormsApp1\bin\Release\net6.0-window
 C:\Users\Orxan477\Desktop\QRCode_Generate\WinFormsApp1\bin\Release\net6.0-windows\runtimes\win-arm64\native\libSkiaSharp.dll
 C:\Users\Orxan477\Desktop\QRCode_Generate\WinFormsApp1\bin\Release\net6.0-windows\runtimes\win-x64\native\libSkiaSharp.dll
 C:\Users\Orxan477\Desktop\QRCode_Generate\WinFormsApp1\bin\Release\net6.0-windows\runtimes\win-x86\native\libSkiaSharp.dll
+C:\Users\Orxan477\Desktop\QRCode_Generate\WinFormsApp1\bin\Release\net6.0-windows\QrCode Generate.dll.manifest
+C:\Users\Orxan477\Desktop\QRCode_Generate\WinFormsApp1\bin\Release\net6.0-windows\QrCode Generate.application
+C:\Users\Orxan477\Desktop\QRCode_Generate\WinFormsApp1\obj\Release\net6.0-windows\QrCode Generate.dll.manifest
+C:\Users\Orxan477\Desktop\QRCode_Generate\WinFormsApp1\obj\Release\net6.0-windows\QrCode Generate.application

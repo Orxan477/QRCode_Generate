@@ -4,3 +4,8 @@ C:\Users\Orxan477\Desktop\QRCode_Generate\WinFormsApp1\bin\Release\net6.0-window
 C:\Users\Orxan477\Desktop\QRCode_Generate\WinFormsApp1\bin\Release\net6.0-windows\app.publish\QrCode Generate.runtimeconfig.json
 C:\Users\Orxan477\Desktop\QRCode_Generate\WinFormsApp1\bin\Release\net6.0-windows\app.publish\QrCode Generate.pdb
 C:\Users\Orxan477\Desktop\QRCode_Generate\WinFormsApp1\bin\Release\net6.0-windows\app.publish\QRCoder.dll
+C:\Users\Orxan477\Desktop\QRCode_Generate\WinFormsApp1\bin\Release\net6.0-windows\app.publish\SkiaSharp.dll
+C:\Users\Orxan477\Desktop\QRCode_Generate\WinFormsApp1\bin\Release\net6.0-windows\app.publish\runtimes\osx\native\libSkiaSharp.dylib
+C:\Users\Orxan477\Desktop\QRCode_Generate\WinFormsApp1\bin\Release\net6.0-windows\app.publish\runtimes\win-arm64\native\libSkiaSharp.dll
+C:\Users\Orxan477\Desktop\QRCode_Generate\WinFormsApp1\bin\Release\net6.0-windows\app.publish\runtimes\win-x64\native\libSkiaSharp.dll
+C:\Users\Orxan477\Desktop\QRCode_Generate\WinFormsApp1\bin\Release\net6.0-windows\app.publish\runtimes\win-x86\native\libSkiaSharp.dll

@@ -191,6 +191,7 @@
             Controls.Add(label1);
             Controls.Add(btnGenerate);
             Icon = (Icon)resources.GetObject("$this.Icon");
+            MaximizeBox = false;
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "QRCode Generate";
