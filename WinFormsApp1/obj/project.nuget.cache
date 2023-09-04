@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "swJYUGTk5PaxRJq2US/yKGCQ/a7RIUYxMuFzyg1dlGPK76bdvyzRz+ZNM2Tu7ME5VKgDOw2yMenors17Ec2G5w==",
+  "dgSpecHash": "09b9ruZBbbcIVVs/f0z/dfJZKIHfqlOz7TE/UczlafORa+fDM8y2T7MN0x3cGRptgPoxxuYe1JVEajIJBB7j3g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Orxan477\\Desktop\\QRCode_Generate\\WinFormsApp1\\QrCode Generate.csproj",
+  "projectFilePath": "E:\\Documents\\Code Academy\\Buta Grup\\QRCode_Generate\\WinFormsApp1\\QrCode Generate.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Orxan477\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\Orxan477\\.nuget\\packages\\qrcoder\\1.4.3\\qrcoder.1.4.3.nupkg.sha512",

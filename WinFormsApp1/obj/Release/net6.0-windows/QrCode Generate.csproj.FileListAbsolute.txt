@@ -51,3 +51,28 @@ C:\Users\Orxan477\Desktop\QRCode_Generate\WinFormsApp1\bin\Release\net6.0-window
 C:\Users\Orxan477\Desktop\QRCode_Generate\WinFormsApp1\bin\Release\net6.0-windows\QrCode Generate.application
 C:\Users\Orxan477\Desktop\QRCode_Generate\WinFormsApp1\obj\Release\net6.0-windows\QrCode Generate.dll.manifest
 C:\Users\Orxan477\Desktop\QRCode_Generate\WinFormsApp1\obj\Release\net6.0-windows\QrCode Generate.application
+E:\Documents\Code Academy\Buta Grup\QRCode_Generate\WinFormsApp1\bin\Release\net6.0-windows\QrCode Generate.exe
+E:\Documents\Code Academy\Buta Grup\QRCode_Generate\WinFormsApp1\bin\Release\net6.0-windows\QrCode Generate.deps.json
+E:\Documents\Code Academy\Buta Grup\QRCode_Generate\WinFormsApp1\bin\Release\net6.0-windows\QrCode Generate.runtimeconfig.json
+E:\Documents\Code Academy\Buta Grup\QRCode_Generate\WinFormsApp1\bin\Release\net6.0-windows\QrCode Generate.dll
+E:\Documents\Code Academy\Buta Grup\QRCode_Generate\WinFormsApp1\bin\Release\net6.0-windows\QrCode Generate.pdb
+E:\Documents\Code Academy\Buta Grup\QRCode_Generate\WinFormsApp1\bin\Release\net6.0-windows\QRCoder.dll
+E:\Documents\Code Academy\Buta Grup\QRCode_Generate\WinFormsApp1\bin\Release\net6.0-windows\SkiaSharp.dll
+E:\Documents\Code Academy\Buta Grup\QRCode_Generate\WinFormsApp1\bin\Release\net6.0-windows\runtimes\osx\native\libSkiaSharp.dylib
+E:\Documents\Code Academy\Buta Grup\QRCode_Generate\WinFormsApp1\bin\Release\net6.0-windows\runtimes\win-arm64\native\libSkiaSharp.dll
+E:\Documents\Code Academy\Buta Grup\QRCode_Generate\WinFormsApp1\bin\Release\net6.0-windows\runtimes\win-x64\native\libSkiaSharp.dll
+E:\Documents\Code Academy\Buta Grup\QRCode_Generate\WinFormsApp1\bin\Release\net6.0-windows\runtimes\win-x86\native\libSkiaSharp.dll
+E:\Documents\Code Academy\Buta Grup\QRCode_Generate\WinFormsApp1\obj\Release\net6.0-windows\QrCode Generate.csproj.AssemblyReference.cache
+E:\Documents\Code Academy\Buta Grup\QRCode_Generate\WinFormsApp1\obj\Release\net6.0-windows\WinFormsApp1.Form1.resources
+E:\Documents\Code Academy\Buta Grup\QRCode_Generate\WinFormsApp1\obj\Release\net6.0-windows\QrCode_Generate.Properties.Resources.resources
+E:\Documents\Code Academy\Buta Grup\QRCode_Generate\WinFormsApp1\obj\Release\net6.0-windows\QrCode Generate.csproj.GenerateResource.cache
+E:\Documents\Code Academy\Buta Grup\QRCode_Generate\WinFormsApp1\obj\Release\net6.0-windows\QrCode Generate.GeneratedMSBuildEditorConfig.editorconfig
+E:\Documents\Code Academy\Buta Grup\QRCode_Generate\WinFormsApp1\obj\Release\net6.0-windows\QrCode Generate.AssemblyInfoInputs.cache
+E:\Documents\Code Academy\Buta Grup\QRCode_Generate\WinFormsApp1\obj\Release\net6.0-windows\QrCode Generate.AssemblyInfo.cs
+E:\Documents\Code Academy\Buta Grup\QRCode_Generate\WinFormsApp1\obj\Release\net6.0-windows\QrCode Generate.csproj.CoreCompileInputs.cache
+E:\Documents\Code Academy\Buta Grup\QRCode_Generate\WinFormsApp1\obj\Release\net6.0-windows\QrCode Generate.csproj.CopyComplete
+E:\Documents\Code Academy\Buta Grup\QRCode_Generate\WinFormsApp1\obj\Release\net6.0-windows\QrCode Generate.dll
+E:\Documents\Code Academy\Buta Grup\QRCode_Generate\WinFormsApp1\obj\Release\net6.0-windows\refint\QrCode Generate.dll
+E:\Documents\Code Academy\Buta Grup\QRCode_Generate\WinFormsApp1\obj\Release\net6.0-windows\QrCode Generate.pdb
+E:\Documents\Code Academy\Buta Grup\QRCode_Generate\WinFormsApp1\obj\Release\net6.0-windows\QrCode Generate.genruntimeconfig.cache
+E:\Documents\Code Academy\Buta Grup\QRCode_Generate\WinFormsApp1\obj\Release\net6.0-windows\ref\QrCode Generate.dll
